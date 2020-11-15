@@ -97,7 +97,7 @@ svg {
     color: #fff;
 }
 /* Small screens */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-aspect-ratio: 9999/10000) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -117,7 +117,7 @@ svg {
     }
 }
 /* Large screens */
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-aspect-ratio: 1/1) {
     .navbar {
         top: 0;
         width: 5rem;
