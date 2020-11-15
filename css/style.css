@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb {
     background: var(--blurple);
 }
 main {
+    align-items: center;
     margin-left: 5rem;
     padding: 1rem;
 }
@@ -90,11 +91,11 @@ svg {
 .navbar:hover .logo svg {
     transform: rotate(180deg);
 }
-.active {
+.nav-link:active {
     background-color: var(--blurple);
     color: #fff;
 }
-.active svg {
+.nav-link:active svg {
     color: #fff;
 }
 /* Tallscreen */
