@@ -6,8 +6,8 @@
     --transition-speed: 200ms;
 }
 body {
-    color: black;
-    background-color: white;
+    background-color: #333;
+    color: white;
     margin: 0;
     padding: 0;
 }
