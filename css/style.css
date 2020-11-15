@@ -96,8 +96,8 @@ svg {
 .active svg {
     color: #fff;
 }
-/* Small screens */
-@media only screen and (max-aspect-ratio: 9999/10000) {
+/* Tallscreen */
+@media only screen and (max-aspect-ratio: 1/1) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -116,8 +116,8 @@ svg {
         margin: 0;
     }
 }
-/* Large screens */
-@media only screen and (min-aspect-ratio: 1/1) {
+/* Widescreen */
+@media only screen and (min-aspect-ratio: 10001/10000) {
     .navbar {
         top: 0;
         width: 5rem;
@@ -125,12 +125,14 @@ svg {
     }
     .navbar:hover {
         width: 16rem;
-        margin-right: 5rem;
     }
     .navbar:hover .link-text {
         display: inline;
     }
     .navbar:hover .logo-text {
         left: 0px;
+    }
+    main.navbar:hover {
+        margin-left: 16rem;
     }
 }
