@@ -4,6 +4,7 @@
     --bg-primary: #23272a;
     --bg-secondary: #2c2f33;
     --transition-speed: 200ms;
+    --blurple: #7289da;
 }
 body {
     background-color: #333;
@@ -18,7 +19,7 @@ body::-webkit-scrollbar-track {
     background: var(--bg-primary);
 }
 body::-webkit-scrollbar-thumb {
-    background: #7289da;
+    background: var(--blurple);
 }
 main {
     margin-left: 5rem;
@@ -42,7 +43,7 @@ main {
     width: 100%;
 }
 svg {
-    color: #7289da;
+    color: var(--blurple);
 }
 .nav-link {
     display: flex;
@@ -90,7 +91,7 @@ svg {
     transform: rotate(180deg);
 }
 .active {
-    background-color: #7289da;
+    background-color: var(--blurple);
     color: #fff;
 }
 .active svg {
