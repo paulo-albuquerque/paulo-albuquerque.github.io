@@ -125,6 +125,7 @@ svg {
     }
     .navbar:hover {
         width: 16rem;
+        margin-right: 5rem;
     }
     .navbar:hover .link-text {
         display: inline;
