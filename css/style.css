@@ -5,7 +5,7 @@
     --text-secondary: #ececec;
     --bg-primary: #23272A;
     --bg-secondary: #2C2F33;
-    --trasition-speed: 600ms;
+    --transition-speed: 200ms;
 }
 body {
     color: black;
@@ -29,7 +29,8 @@ main {
 .navbar {
     position: fixed;
     background-color: var(--bg-primary);
-    transition: 200ms ease;
+    transition: width 200ms ease;
+    overflow: scroll;
 }
 .navbar-nav {
     list-style: none;
@@ -40,8 +41,11 @@ main {
     align-items: center;
     height: 100%;
 }
-.navbar-item {
+.nav-item {
     width: 100%;
+}
+svg {
+    color: #7289da;
 }
 .nav-link {
     display: flex;
@@ -49,25 +53,22 @@ main {
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
-    transition: var(--trasition-speed);
-    min-width: 2rem;
-    margin: 0 1.5rem;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+.nav-link:hover:not(.active) {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
 }
 .link-text {
     display: none;
     margin-left: 1rem;
 }
 .nav-link svg {
+    width: 2rem;
     min-width: 2rem;
-    margin: 0;
-}
-.navbar:hover {
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-}
-.fa-primary,
-.fa-secondary {
-    transition: var(--trasition-speed);
+    margin: 0 1.5rem;
 }
 .logo {
     font-weight: bold;
@@ -75,21 +76,34 @@ main {
     margin-bottom: 1rem;
     text-align: center;
     color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1rem;
     letter-spacing: 0.3ch;
-    color: var(--text-secondary);
     width: 100%;
-    margin: 0;
 }
-.nav:hover.logo:svg {
-    transform: rotate(180);
+.logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
 }
-/*S mall screens */
+.logo-text 
+{
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+.navbar:hover .logo svg {
+    transform: rotate(180deg);
+}
+.active {
+    background-color: var(--bg-secondary);
+}
+/* Small screens */
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
         width: 100vw;
         height: 5rem;
-
     }
     .logo {
         display: none;
@@ -115,7 +129,10 @@ main {
         width: 16rem;
     }
     .navbar:hover .link-text {
-        display: block;
-        transition: opacity var(--trasition-speed);
+        display: inline;
+    }
+    .navbar:hover .logo-text
+    {
+    left: 0px;
     }
 }
