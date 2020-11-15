@@ -15,7 +15,7 @@
     <nav class='navbar'>
         <ul class='navbar-nav'>
             <li class='logo'>
-                <a href="#" class='nav-link'>
+                <a href='#' class='nav-link'>
                     <span class='link-text'>Paulo Albuquerque</span>
                     <svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-double-right'
                         class='svg-inline--fa fa-angle-double-right fa-w-14' role='img'
@@ -64,36 +64,41 @@
             </li>
         </ul>
     </nav>
-    <main class="container-fluid">
-        <h1 id="about">Sobre</h1>
+    <main class='container-fluid'>
+        <h1 id='about'>Sobre</h1>
         <p>
-            Olá, meu nome é Paulo Cezar.<br>
+            Olá, meu nome é Paulo Cezar de Carvalho Albuquerque.<br>
             Moro no Rio Grande do Norte - BR,
             atualmente sou estudande de Informática para Internet pelo
             Instituto Federal de Educação, Ciência e Tecnologia<br>
             e no futuro pretendo me tornar um Desenvolvedor de Jogo Digitais!
         </p>
-        <h1 id="portfolio">Portifólio</h1>
+        <h1 id='portfolio'>Portifólio</h1>
         <p>Aqui estão projetos que desenvolvi ou tive alguma participção.</p>
-        <button type="button" class="collapsible">Compilado de atividades acadêmicas 2019.1</button>
-        <div class="content">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Atividade Avaliativa 01</a>
+        <button type='button' class='collapsible'>Compilado de atividades acadêmicas 2019.1</button>
+        <div class='content'>
+            <button type='button' class='collapsible'>Fundamentos de Lógica e Algoritmos</button>
+            <div class='content'>
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Lista 1 de Exercícios</a>
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Atividade Avaliativa 01</a>
+                <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Atividade Avaliativa 02</a>
+            </div>
         </div>
-        <script> coll = document.getElementsByClassName("collapsible");
+        <script> coll = document.getElementsByClassName('collapsible');
             var i;
             for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
+                coll[i].addEventListener('click', function () {
+                    this.classList.toggle('active');
                     var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
                     } else {
-                        content.style.display = "block";
+                        content.style.display = 'block';
                     }
                 });
             }
         </script>
-        <h1 id="contact">Informações de Contato</h1>
+        <h1 id='contact'>Informações de Contato</h1>
         <p>
             oluapcca@gmail.com
         </p>
