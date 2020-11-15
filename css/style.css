@@ -1,8 +1,8 @@
 :root {
     font-size: 16px;
     font-family: "Open Sans";
-    --bg-primary: #23272A;
-    --bg-secondary: #2C2F33;
+    --bg-primary: #23272a;
+    --bg-secondary: #2c2f33;
     --transition-speed: 200ms;
 }
 body {
@@ -79,8 +79,7 @@ svg {
     transform: rotate(0deg);
     transition: var(--transition-speed);
 }
-.logo-text 
-{
+.logo-text {
     display: inline;
     position: absolute;
     left: -999px;
@@ -93,7 +92,7 @@ svg {
     background-color: #7289da;
     color: #fff;
 }
-.active svg{
+.active svg {
     color: #fff;
 }
 /* Small screens */
@@ -129,8 +128,7 @@ svg {
     .navbar:hover .link-text {
         display: inline;
     }
-    .navbar:hover .logo-text
-    {
-    left: 0px;
+    .navbar:hover .logo-text {
+        left: 0px;
     }
 }
