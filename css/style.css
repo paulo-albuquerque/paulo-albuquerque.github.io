@@ -1,6 +1,6 @@
 :root {
     font-size: 16px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     --bg-primary: #23272a;
     --bg-secondary: #2c2f33;
     --transition-speed: 200ms;
@@ -53,9 +53,11 @@ svg {
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
 }
-.nav-link:hover:not(.active) {
+.nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
+    margin-right: 5rem;
+    
 }
 .link-text {
     display: none;
