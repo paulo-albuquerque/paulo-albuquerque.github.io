@@ -185,5 +185,9 @@ svg {
     display: none;
     overflow: hidden;
     background-color: var(--bg-primary);
+    transition: max-height 200s ease;
     
+}
+.content a {
+    padding-left: 1rem;
 }
