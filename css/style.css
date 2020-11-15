@@ -1,8 +1,6 @@
 :root {
     font-size: 16px;
     font-family: "Open Sans";
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
     --bg-primary: #23272A;
     --bg-secondary: #2C2F33;
     --transition-speed: 200ms;
@@ -50,7 +48,7 @@ svg {
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
+    color: #fff;
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
@@ -58,7 +56,6 @@ svg {
 .nav-link:hover:not(.active) {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
-    color: var(--text-secondary);
 }
 .link-text {
     display: none;
@@ -73,7 +70,6 @@ svg {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    color: var(--text-secondary);
     background: var(--bg-primary);
     font-size: 1rem;
     letter-spacing: 0.3ch;
@@ -101,7 +97,7 @@ svg {
     color: #fff;
 }
 /* Small screens */
-@media only screen and (max-width: 1079px) {
+@media only screen and (max-width: 1440px) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -121,7 +117,7 @@ svg {
     }
 }
 /* Large screens */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1441px) {
     .navbar {
         top: 0;
         width: 5rem;
