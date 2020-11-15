@@ -49,6 +49,13 @@ main {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Old IE & Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.navbar::-webkit-scrollbar {
+    display: none;
+
 }
 .navbar-nav {
     list-style: none;
