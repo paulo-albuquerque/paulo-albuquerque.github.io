@@ -56,7 +56,6 @@ svg {
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
-    margin-right: 5rem;
     
 }
 .link-text {
