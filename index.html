@@ -65,22 +65,38 @@
         </ul>
     </nav>
     <main class="container-fluid">
-            <h1 id="about">Sobre</h1>
-            <p>
-                Olá, meu nome é Paulo Cezar.<br>
-                Moro no Rio Grande do Norte - BR,
-                atualmente sou estudande de Informática para Internet pelo 
-                Instituto Federal de Educação, Ciência e Tecnologia<br>
-                e no futuro pretendo me tornar um Desenvolvedor de Jogo Digitais!
-            </p>
-            <h1 id="portfolio">Portifólio</h1>
-            <p>
-                Aqui estão projetos que desenvolvi ou tive alguma participção.
-            </p>
-            <h1 id="contact">Informações de Contato</h1>
-            <p>
-                oluapcca@gmail.com
-            </p>
+        <h1 id="about">Sobre</h1>
+        <p>
+            Olá, meu nome é Paulo Cezar.<br>
+            Moro no Rio Grande do Norte - BR,
+            atualmente sou estudande de Informática para Internet pelo
+            Instituto Federal de Educação, Ciência e Tecnologia<br>
+            e no futuro pretendo me tornar um Desenvolvedor de Jogo Digitais!
+        </p>
+        <h1 id="portfolio">Portifólio</h1>
+        <p>Aqui estão projetos que desenvolvi ou tive alguma participção.</p>
+        <button type="button" class="collapsible">Compilado de atividades acadêmicas 2019.1</button>
+        <div class="content">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Atividade Avaliativa 01</a>
+        </div>
+        <script> coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <h1 id="contact">Informações de Contato</h1>
+        <p>
+            oluapcca@gmail.com
+        </p>
     </main>
 </body>
 
