@@ -53,8 +53,8 @@ main {
     -ms-overflow-style: none; /* Old IE & Edge */
     scrollbar-width: none; /* Firefox */
 }
-.navbar::-webkit-scrollbar {
-    display: none;
+.navbar::-webkit-scrollbar { /* webkit based Browsers */
+    display: none; 
 
 }
 .navbar-nav {
