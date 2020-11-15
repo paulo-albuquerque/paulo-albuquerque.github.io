@@ -166,6 +166,8 @@ svg {
     }
 }
 .collapsible {
+    font-family: 'Open Sans';
+    font-size: 1rem;
     background-color: var(--bg-primary);
     color: #fff;
     cursor: pointer;
@@ -176,12 +178,13 @@ svg {
     outline: none;
     font-size: 15px;
 }
- active, .collapsible:hover {
+.active, .collapsible:hover {
     background-color: var(--bg-secondary);
 }
 .content {
     padding: 1rem;
     display: none;
     overflow: hidden;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
+    
 }
