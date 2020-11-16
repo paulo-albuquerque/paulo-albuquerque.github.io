@@ -191,3 +191,7 @@ button {
 .content a {
     padding-left: 1rem;
 }
+button.disabled {
+    cursor: default;
+    filter: grayscale(100%) opacity(0.5);
+}
