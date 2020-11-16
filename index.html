@@ -74,26 +74,29 @@
             e no futuro pretendo me tornar um Desenvolvedor de Jogo Digitais!
         </p>
         <h1 id="portfolio">Portifólio</h1>
-        <p>Aqui estão projetos que desenvolvi ou tive alguma participção.</p>
-        <button type="button" class="collapsible">Atividades acadêmicas de 2019</button>
-        <div class="content">
-            <button type="button" class="collapsible">Fundamentos de Lógica e Algoritmos</button>
-            <div class="content">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Lista 1 de Exercícios(Python)</a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Atividade Avaliativa 01(Python)</a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Atividade Avaliativa 02(Python)</a>
-            </div>
-        </div>
+        <p>Aqui estão os projetos desenvolvidos por mim.</p>
         <button type="button" class="collapsible">Atividades acadêmicas de 2020</button>
         <div class="content">
             <button type="button" class="collapsible">Programação Estruturada e Orientada a Objetos</button>
             <div class="content">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Clonagem de Site (HTML+CSS)</a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Atividade Avaliativa 01(HTML+CSS)</a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Atividade Avaliativa 02(HTML+CSS)</a>
+                <button type="button" class="collapsible">Hospedagem de Site (O site que você está agora) [HTML + CSS + JS]</button>    
+                        <div class="content">
+                            <button onclick="window.location.href='https://github.com/paulo-albuquerque/paulo-albuquerque.github.io'">Veja o repositório no GitHub</button>
+                        </div>
+                    </div>
             </div>
         </div>
-        <script> coll = document.getElementsByClassName("collapsible");
+        <button type="button" class="collapsible">Atividades acadêmicas de 2019</button>
+        <div class="content">
+            <button type="button" class="collapsible">Fundamentos de Lógica e Algoritmos</button>
+            <div class="content">
+                <button onclick="window.location.href=''">Lista 1 de Exercícios [Python]</button>
+                <button onclick="window.location.href='#'">Atividade Avaliativa 01 [Python]</button>
+                <button onclick="window.location.href='#'">Atividade Avaliativa 02 [Python]</button>
+            </div>
+        </div>
+        <script>
+            coll = document.getElementsByClassName("collapsible");
             var i;
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function () {
@@ -109,7 +112,6 @@
         </script>
         <h1 id="contact">Informações de Contato</h1>
         <p>
-            oluapcca@gmail.com
         </p>
     </main>
 </body>

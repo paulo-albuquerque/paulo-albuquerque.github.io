@@ -1,32 +1,28 @@
-@media only screen and (max-width: 1439px) {
-    :root {
-        font-size: 16px;
-    }
-}
-@media only screen and (min-width: 1440px) {
-    :root {
-        font-size: 32px;
-    }
-}
-@media only screen and (min-width: 2160px) {
-    :root {
-        font-size: 64px;
-    }
-}
-@media only screen and (min-width: 4320px) {
-    :root {
-        font-size: 128px;
-    }
-}
 :root {
+    font-size: 32px;
     font-family: "Open Sans";
     --bg-primary: #23272a;
     --bg-secondary: #2c2f33;
     --transition-speed: 200ms;
     --blurple: #7289da;
 }
+@media only screen and (min-height: 1440px) {
+    :root {
+        font-size: 40px;
+    }
+}
+@media only screen and (min-height: 2160px) {
+    :root {
+        font-size: 64px;
+    }
+}
+@media only screen and (min-height: 4320px) {
+    :root {
+        font-size: 128px;
+    }
+}
 body {
-    background-color: #333;
+    background-color: #222;
     color: white;
     margin: 0;
     padding: 0;
@@ -170,7 +166,7 @@ svg {
         margin-left: 16rem;
     }
 }
-.collapsible {
+button {
     font-family: "Open Sans";
     font-size: 1rem;
     background-color: var(--bg-primary);
