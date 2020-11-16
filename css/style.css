@@ -19,7 +19,7 @@
     }
 }
 :root {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     --bg-primary: #23272a;
     --bg-secondary: #2c2f33;
     --transition-speed: 200ms;
@@ -54,9 +54,9 @@ main {
     -ms-overflow-style: none; /* Old IE & Edge */
     scrollbar-width: none; /* Firefox */
 }
-.navbar::-webkit-scrollbar { /* webkit based Browsers */
-    display: none; 
-
+.navbar::-webkit-scrollbar {
+    /* webkit based Browsers */
+    display: none;
 }
 .navbar-nav {
     list-style: none;
@@ -73,7 +73,8 @@ main {
 svg {
     color: var(--blurple);
 }
-.nav-link,.content a {
+.nav-link,
+.content a {
     display: flex;
     align-items: center;
     height: 5rem;
@@ -82,16 +83,17 @@ svg {
     filter: grayscale(100%) opacity(0.5);
     transition: var(--transition-speed);
 }
-.nav-link:hover,.content a:hover {
+.nav-link:hover,
+.content a:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
-    
 }
 .link-text {
     display: none;
     margin-left: 1rem;
 }
-.nav-link svg,.content a svg {
+.nav-link svg,
+.content a svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
@@ -118,11 +120,13 @@ svg {
 .navbar:hover .logo svg {
     transform: rotate(180deg);
 }
-.nav-link:active,.content a:active {
+.nav-link:active,
+.content a:active {
     background-color: var(--blurple);
     color: #fff;
 }
-.nav-link:active svg,.content a:active  {
+.nav-link:active svg,
+.content a:active {
     color: #fff;
 }
 /* Tallscreen */
@@ -138,7 +142,8 @@ svg {
     .navbar-nav {
         flex-direction: row;
     }
-    .nav-link,.content a {
+    .nav-link,
+    .content a {
         justify-content: center;
     }
     main {
@@ -166,7 +171,7 @@ svg {
     }
 }
 .collapsible {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 1rem;
     background-color: var(--bg-primary);
     color: #fff;
@@ -177,16 +182,15 @@ svg {
     text-align: left;
     outline: none;
 }
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
     background-color: var(--bg-secondary);
 }
 .content {
-    padding: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     display: none;
     overflow: hidden;
     background-color: var(--bg-primary);
-    transition: max-height 200s ease;
-    
 }
 .content a {
     padding-left: 1rem;
