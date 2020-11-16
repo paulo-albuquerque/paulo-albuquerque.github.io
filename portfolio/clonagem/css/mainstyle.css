@@ -1,0 +1,144 @@
+.container {
+    margin-left: 25%;
+}
+p.center-aligned {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+#upperheader {
+    background-color:#f1f1f1;
+}
+a#homepage {
+    color: #fff;
+}
+a:hover#homepage {
+    color: #fff;
+    text-decoration: none;
+}
+#text-top {
+    margin-left: 150px;
+    margin-top: -100px;
+}
+h1 {
+    margin-top: -15px;
+}
+img#covid {
+    width: 100%;
+    margin-top: 10px;
+}
+ul {
+    list-style: none;
+}
+ul.sidemenu{
+    margin-top: 10px;
+    padding: 0;
+    border-width: 3px 1px 3px 1px; 
+    border-style: solid;
+    border-color: #2f6abd;
+}
+li a{
+    display: block;
+    color: #000;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+li a:hover {
+    background-color: #2f6abd;
+    color: white;
+    text-decoration: none;
+}
+.eo {
+    color: #2C66Ce;
+    padding: 4px 8px;
+    background-color: #eaebee;
+}
+a.lwrheader {
+    color: #fff;
+    background-color: #0f4098;
+    text-decoration: none;
+    padding: 8px 8px;
+}
+a.lwrheader:hover{
+    background-color: #fff;
+    color: #0f4098;
+}
+a.lwrheader2 {
+    color: #2f6abd;
+    background-color: #eaebee;
+    text-decoration: none;
+    padding: 8px 8px;
+}
+a.lwrheader2:hover{
+    background-color: #2f6abd;
+    color: #fff;
+}
+#header1 {
+    background-color: #2f6abd;
+}
+#header2 {
+    background-color: #0f4098;
+}
+#header3 {
+    background-color: #eaebee;
+}
+img#dv {
+    margin-left: 200px;
+    margin-top: -1096px;
+    border-radius: 1px;
+}
+#legenda {
+    margin-left: 200px;
+    margin-top: -376px;
+}
+a#ge {
+    background-color: #eaebee;
+    color: #000;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+a#ge:hover {
+    background-color: #2f6abd;
+    color: #fff;
+}
+footer {
+    background-color: #1659bf;
+}
+ul.sidemenu2 {
+    margin-top: 10px;
+    padding: 0;
+    border-width: 0px 0px 0px 1px; 
+    border-style: dotted;
+    border-color: #fff;
+}
+li.l2 a{
+    display: block;
+    color: #fff;
+    padding: 1px 16px;
+    text-decoration: #fff;
+    border-bottom: 0px;
+}
+li.l2 a:hover {
+    background-color:none;
+    color: white;
+    text-decoration: #fff;
+}
+.eof {
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #1659bf;
+}
+#footer {
+    margin-left: 25%;
+}
+p {
+    color: #606060;
+}
+#news {
+    margin-left: 22%;
+    margin-top: -300px;
+}
+a#anews{
+    color: #2f6abd;
+    text-decoration: none;
+}

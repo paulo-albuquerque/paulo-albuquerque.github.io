@@ -1,0 +1,121 @@
+body {
+    margin: 0; 
+    padding: 0;
+    color: #fff;
+    caret-color: #000;
+    text-align: left;
+    font-family: "calibri";
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background: url(imagens/mainbackgroundblack.jpg) repeat center center scroll;
+}
+#blankleft {
+    margin-top: 0px;
+    width: 480px; 
+    height: 870px; 
+    background: none;
+    float: left;
+}
+#blankright {
+    margin-top: 0px;
+    width: 480px; 
+    height: 870px; 
+    background: none;
+    float: right;
+}
+#center {
+    margin: 30px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg) repeat center center scroll;
+    border-radius: 3px;
+    position: relative;
+}
+#text {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -366px 480px 0px 743px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+    position: relative;
+}
+#othertext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -12px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+    position: relative;
+}
+#newstext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -12px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+}
+#newscenter {
+    margin: -20px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg) repeat center center scroll;
+    border-radius: 3px;
+}
+#othernews {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -20px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+}
+#bottomtext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -20px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+}
+#partypic {
+    margin: 30px 480px 0px 480px;
+    width: 262px;
+    height: 362px;
+    background: url(imagens/backgroundblack.jpg) repeat center center scroll;
+    border-radius: 3px;
+}
+#partytext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -382px 480px 0px 743px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+}
+#bottompartytext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -19px 480px 0px 480px;
+    width: auto;
+    height: auto;
+    background: url(imagens/backgroundblack.jpg);
+    border-radius: 3px;
+}
+img { 
+    border: 5px solid #222;
+    border-radius: 3px;
+    padding: 1px;
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    color: #fff;
+}
