@@ -1,0 +1,36 @@
+body {
+    margin: 0; 
+    padding: 0;
+    color: #fff;
+    caret-color: #fff;
+    font-family: "calibri";
+    text-align: center;
+    text-shadow: -1px -1px 0 #23272a, 1px -1px 0 #23272a, -1px 1px 0 #23272a, 1px 1px 0 #23272a;
+    background: url(imgs/mainbackground.png) no-repeat top center scroll;
+    background-color: #23272a;
+}
+#maintext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -21px 640px 1px 640px;
+    width: auto;
+    height: auto;
+}
+#detailstext {
+    border-style: hidden;
+    border-width: 5px;
+    margin: -21px 640px 1px 640px;
+    width: auto;
+    height: auto;
+}
+.graph2 {
+    margin-right: 320px;
+}
+.graph3 {
+    position: absolute;
+    margin-top: -307px;
+    margin-left: 320px;
+}
+a {
+    color: #fff;
+}
