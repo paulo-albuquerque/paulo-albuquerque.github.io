@@ -177,7 +177,7 @@ svg {
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(1rem, 1fr));
     }
-    
+
 }
 button {
     font-family: "Open Sans";
