@@ -233,3 +233,9 @@ img#profpic {
 #about {
     margin-top: -0.8rem;
 }
+svg.rotating-icons {
+    transform: rotate(-90deg);
+}
+main button.collapsible.active svg.rotating-icons {
+    transform: rotate(0deg);
+}
