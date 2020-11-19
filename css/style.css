@@ -214,4 +214,9 @@ button.disabled {
 img#profpic {
     padding: 0;
     border: 0.1rem solid #fff;
+    width: 9,9375;
+    height: 11,0625rem;
+}
+#about {
+    margin-top: -0.8rem;
 }
