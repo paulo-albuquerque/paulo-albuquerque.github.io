@@ -1,8 +1,8 @@
 :root {
     font-size: 32px;
     font-family: "Open Sans";
-    /* egg #0c0c18 #220944 #36116d #ff5d02*/
-    /*disc #23272a #2c2f33 #7289da */
+    /* egg #0c0c18 #220944 #36116d #ff5d02 */
+    /* disc #23272a #2c2f33 #7289da */
     --bg-primary: #23272a;
     --bg-secondary: #2c2f33;
     --contrast: #7289da;
@@ -129,7 +129,13 @@ svg {
 }
 /* Tallscreen */
 @media only screen and (max-aspect-ratio: 1/1) {
+    body {scrollbar-width: none; /* Firefox */
+    }
+    body::-webkit-scrollbar {
+        display: none; /* webkit based Browsers */
+    }
     .navbar {
+        position: fixed;
         bottom: 0;
         width: 100vw;
         height: 5rem;
@@ -145,7 +151,7 @@ svg {
         justify-content: center;
     }
     main {
-        margin: 0;
+        margin: 0rem 0rem 5rem;
     }
 }
 /* Widescreen */
@@ -167,6 +173,11 @@ svg {
     main.navbar:hover {
         margin-left: 16rem;
     }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(1rem, 1fr));
+    }
+    
 }
 button {
     font-family: "Open Sans";
@@ -197,7 +208,7 @@ button.disabled {
     cursor: default;
     filter: grayscale(100%) opacity(0.5);
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(minmax(1rem, 1fr));
+img#profpic {
+    border: 0.1rem solid #fff;
+    border-radius: 0.1rem;
 }
