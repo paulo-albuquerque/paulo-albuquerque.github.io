@@ -173,9 +173,12 @@ svg {
     main.navbar:hover {
         margin-left: 16rem;
     }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(1rem, 1fr));
+    .flex {
+        display: flex;
+        align-content: flex-start;
+    }
+    .flex-item {
+        padding: 1rem;
     }
 
 }
@@ -209,6 +212,6 @@ button.disabled {
     filter: grayscale(100%) opacity(0.5);
 }
 img#profpic {
+    padding: 0;
     border: 0.1rem solid #fff;
-    border-radius: 0.1rem;
 }
