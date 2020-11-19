@@ -68,9 +68,6 @@ main {
 .nav-item {
     width: 100%;
 }
-svg {
-    color: var(--contrast);
-}
 .nav-link,
 .content a {
     display: flex;
@@ -92,6 +89,7 @@ svg {
 }
 .nav-link svg,
 .content a svg {
+    color: var(--contrast);
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
@@ -127,6 +125,15 @@ svg {
 .content a:active {
     color: #fff;
 }
+main svg {
+    width: 0.7rem;
+    padding-right: 0.1rem;
+    color: var(--contrast);
+    filter: grayscale(100%);
+}
+button:hover svg {
+filter: grayscale(0%);
+}
 /* Tallscreen */
 @media only screen and (max-aspect-ratio: 1/1) {
     body {scrollbar-width: none; /* Firefox */
@@ -153,6 +160,10 @@ svg {
     main {
         margin: 0rem 0rem 5rem;
     }
+    main svg {
+        clear: both;
+        filter: opacity(0%);
+    }
 }
 /* Widescreen */
 @media only screen and (min-aspect-ratio: 10001/10000) {
@@ -170,16 +181,18 @@ svg {
     .navbar:hover .logo-text {
         left: 0px;
     }
-    main.navbar:hover {
-        margin-left: 16rem;
-    }
     .flex {
         display: flex;
         align-content: flex-start;
     }
     .flex-item {
-        padding: 1rem;
+        padding: 0rem 1rem 0rem;
     }
+    .navbar:hover + main {
+        margin-left: 16rem;
+        transition: var(--transition-speed);
+    }
+    
 
 }
 button {
@@ -195,7 +208,7 @@ button {
     outline: none;
 }
 .active,
-.collapsible:hover {
+button:hover {
     background-color: var(--bg-secondary);
 }
 .content {
@@ -207,15 +220,15 @@ button {
 .content a {
     padding-left: 1rem;
 }
-button.disabled {
+button.disabled { /*not used right now*/
     cursor: default;
     filter: grayscale(100%) opacity(0.5);
 }
 img#profpic {
     padding: 0;
     border: 0.1rem solid #fff;
-    width: 9,9375;
-    height: 11,0625rem;
+    width: 9.9375;
+    height: 11.0625rem;
 }
 #about {
     margin-top: -0.8rem;
