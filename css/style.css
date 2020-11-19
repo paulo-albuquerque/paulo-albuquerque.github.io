@@ -1,11 +1,13 @@
 :root {
     font-size: 32px;
     font-family: "Open Sans";
-    --bg-primary: #0c0c18;
-    --bg-secondary: #220944;
-    --bg-terciary: #36116d;
+    /* egg #0c0c18 #220944 #36116d #ff5d02*/
+    /*disc #23272a #2c2f33 #7289da */
+    --bg-primary: #23272a;
+    --bg-secondary: #2c2f33;
+    --contrast: #7289da;
     --transition-speed: 200ms;
-    --contrast: #ff5d02;
+    
 }
 @media only screen and (min-height: 1440px) {
     :root {
@@ -23,16 +25,16 @@
     }
 }
 body {
-    background-image: url("imgs/background.png") no-repeat center center fixed;
+    background-color: #222;
     color: white;
     margin: 0;
     padding: 0;
 }
 body::-webkit-scrollbar {
-    width: 0.25rem;
+    width: 0.10rem;
 }
 body::-webkit-scrollbar-track {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 body::-webkit-scrollbar-thumb {
     background: var(--contrast);
@@ -40,12 +42,11 @@ body::-webkit-scrollbar-thumb {
 main {
     align-items: center;
     margin-left: 5rem;
-    margin-top: -1.2rem;
     padding: 1rem;
 }
 .navbar {
     position: fixed;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     transition: width 200ms ease;
     overflow-y: scroll;
     -ms-overflow-style: none; /* Old IE & Edge */
@@ -83,7 +84,7 @@ svg {
 .nav-link:hover,
 .content a:hover {
     filter: grayscale(0%) opacity(1);
-    background: var(--bg-terciary);
+    background: var(--bg-secondary);
 }
 .link-text {
     display: none;
@@ -99,7 +100,7 @@ svg {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     font-size: 1rem;
     letter-spacing: 0.3ch;
     width: 100%;
@@ -170,7 +171,7 @@ svg {
 button {
     font-family: "Open Sans";
     font-size: 1rem;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     color: #fff;
     cursor: pointer;
     padding: 1rem;
@@ -181,13 +182,13 @@ button {
 }
 .active,
 .collapsible:hover {
-    background-color: var(--bg-terciary);
+    background-color: var(--bg-secondary);
 }
 .content {
     padding: 0rem 1rem 0rem 1rem;
     display: none;
     overflow: hidden;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
 }
 .content a {
     padding-left: 1rem;
@@ -195,4 +196,8 @@ button {
 button.disabled {
     cursor: default;
     filter: grayscale(100%) opacity(0.5);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(minmax(1rem, 1fr));
 }
