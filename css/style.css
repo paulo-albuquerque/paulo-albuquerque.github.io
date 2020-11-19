@@ -1,5 +1,5 @@
 :root {
-    font-size: 32px;
+    font-size: 16px;
     font-family: "Open Sans";
     /* egg #0c0c18 #220944 #36116d #ff5d02 */
     /* disc #23272a #2c2f33 #7289da */
@@ -9,17 +9,22 @@
     --transition-speed: 200ms;
     
 }
-@media only screen and (min-height: 1440px) {
+@media only screen and (min-height: 900px) {
+    :root {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-height: 1300px) {
     :root {
         font-size: 40px;
     }
 }
-@media only screen and (min-height: 2160px) {
+@media only screen and (min-height: 2000px) {
     :root {
         font-size: 64px;
     }
 }
-@media only screen and (min-height: 4320px) {
+@media only screen and (min-height: 4200px) {
     :root {
         font-size: 128px;
     }
