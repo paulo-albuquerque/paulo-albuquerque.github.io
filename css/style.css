@@ -9,7 +9,7 @@
     --transition-speed: 200ms;
     
 }
-@media only screen and (min-height: 900px) {
+@media only screen and (min-height: 600px) {
     :root {
         font-size: 32px;
     }
